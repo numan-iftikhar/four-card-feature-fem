@@ -19,11 +19,11 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Four card feature section</title>
-<style>
-  body{
-    font-family: 'Poppins', sans-serif;
-  }
-</style>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
     <script>
       tailwind.config = {
         theme: {
@@ -42,56 +42,91 @@
       };
     </script>
   </head>
-  <body class="bg-veryLightGray min-h-screen flex flex-col justify-center items-center relative">
+  <body
+    class="bg-veryLightGray min-h-screen flex flex-col justify-center items-center relative"
+  >
+    <main class="w-[290px] md:w-[60rem] mx-5 my-10">
+      <header class="text-center md:w-[30rem] mx-auto">
+        <h2 class="text-xl text-grayishBlue">Reliable, efficient delivery</h2>
+        <h2 class="text-xl text-veryDarkblue font-bold mb-2">
+          Powered by Technology
+        </h2>
+        <p class="text-grayishBlue text-sm mb-10">
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </p>
+      </header>
 
-    <main class="w-[300px] mx-5 my-10">
-      <h2 class="text-xl text-grayishBlue">Reliable, efficient delivery</h2>
-      <h2 class="text-xl text-veryDarkblue font-bold mb-2">Powered by Technology</h2>
-      <p class="text-grayishBlue text-sm mb-10">Our Artificial
-        Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
-
-
+      <!-- Cards Grid -->
+      <div class="md:grid gap-8 grid-cols-3 grid-rows-4">
         <!-- card 1 -->
-        <div class="card-1 p-5 bg-white shadow-xl rounded border-t-4 border-t-cyan mb-5">
+        <div
+          class="card-1 p-5 bg-white shadow-xl rounded border-t-4 border-t-cyan mb-5 row-start-2 row-end-3"
+        >
           <h2 class="text-lg font-semibold">Supervisor</h2>
-          <p class="text-grayishBlue text-sm">Monitors activity to identify
-            project roadblocks</p>
-            <div class="icon-img mt-6"><img src="images/icon-supervisor.svg" alt="" class="ml-auto"></div>
+          <p class="text-grayishBlue text-sm">
+            Monitors activity to identify project roadblocks
+          </p>
+          <div class="icon-img mt-6">
+            <img src="images/icon-supervisor.svg" alt="" class="ml-auto" />
+          </div>
         </div>
-
 
         <!-- card 2 -->
-        <div class="card-2 p-5 bg-white shadow-xl rounded border-t-4 border-t-red mb-5">
+        <div
+          class="card-2 p-5 bg-white shadow-xl rounded border-t-4 border-t-red mb-5 col-start-2 col-end-3"
+        >
           <h2 class="text-lg font-semibold">Team Builder</h2>
-          <p class="text-grayishBlue text-sm">Scans our talent network to create the
-            optimal team for your project</p>
-            <div class="icon-img mt-6"><img src="images/icon-team-builder.svg" alt="" class="ml-auto"></div>
+          <p class="text-grayishBlue text-sm">
+            Scans our talent network to create the optimal team for your project
+          </p>
+          <div class="icon-img mt-6">
+            <img src="images/icon-team-builder.svg" alt="" class="ml-auto" />
+          </div>
         </div>
-
 
         <!-- card 3 -->
-        <div class="card-3 p-5 bg-white shadow-xl rounded border-t-4 border-t-orange mb-5">
+        <div
+          class="card-3 p-5 bg-white shadow-xl rounded border-t-4 border-t-orange mb-5 col-start-2 col-end-3"
+        >
           <h2 class="text-lg font-semibold">Karma</h2>
-          <p class="text-grayishBlue text-sm">Regularly evaluates our talent to ensure quality</p>
-          <div class="icon-img mt-6"><img src="images/icon-karma.svg" alt="" class="ml-auto"></div>
+          <p class="text-grayishBlue text-sm">
+            Regularly evaluates our talent to ensure quality
+          </p>
+          <div class="icon-img mt-6">
+            <img src="images/icon-karma.svg" alt="" class="ml-auto" />
+          </div>
         </div>
-
 
         <!-- card 4 -->
-        <div class="card-4 p-5 bg-white shadow-xl rounded border-t-4 border-t-blue mb-5">
+        <div
+          class="card-4 p-5 bg-white shadow-xl rounded border-t-4 border-t-blue mb-5 col-start-3"
+        >
           <h2 class="text-lg font-semibold">Calculator</h2>
-          <p class="text-grayishBlue text-sm">Uses data from past projects to provide better delivery estimates</p>
-          <div class="icon-img mt-6"><img src="images/icon-calculator.svg" alt="" class="ml-auto"></div>
+          <p class="text-grayishBlue text-sm">
+            Uses data from past projects to provide better delivery estimates
+          </p>
+          <div class="icon-img mt-6">
+            <img src="images/icon-calculator.svg" alt="" class="ml-auto" />
+          </div>
         </div>
+      </div>
     </main>
-              
 
-    <footer class="absolute bottom-0">
+    <footer class="absolute bottom-0 text-sm">
       <p class="attribution">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a
+          class="text-blue"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by
+        <a
+          class="text-blue"
+          href="https://www.frontendmentor.io/profile/numan-iftikhar"
+          >Numan Iftikhar</a
+        >.
       </p>
     </footer>
   </body>
