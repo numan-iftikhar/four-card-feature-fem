@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Four card feature section</title>
+<style>
+  body{
+    font-family: 'Poppins', sans-serif;
+  }
+</style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              red: "hsl(0, 78%, 62%)",
+              cyan: "hsl(180, 62%, 55%)",
+              orange: "hsl(34, 97%, 64%)",
+              blue: "hsl(212, 86%, 64%)",
+              veryDarkBlue: "hsl(234, 12%, 34%)",
+              grayishBlue: "hsl(229, 6%, 66%)",
+              veryLightGray: "hsl(0, 0%, 98%)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-veryLightGray min-h-screen flex flex-col justify-center items-center relative">
+
+    <main class="mx-5 my-10">
+      <h2>Reliable, efficient delivery</h2>
+      <h2>Powered by Technology</h2>
+      <p>Our Artificial
+        Intelligence powered tools use millions of project data points to ensure
+        that your project is successful</p>
+
+        <div class="card-1">
+          <h2>Supervisor</h2>
+          <p>Monitors activity to identify
+            project roadblocks</p>
+            <div class="icon-img"><img src="" alt=""></div>
+        </div>
+        <div class="card-2">
+          <h2>Team Builder</h2>
+          <p>Scans our talent network to create the
+            optimal team for your project</p>
+            <div class="icon-img"><img src="" alt=""></div>
+        </div>
+        <div class="card-3">
+          <h2>Karma</h2>
+          <p>Regularly evaluates our talent to ensure quality</p>
+          <div class="icon-img"><img src="" alt=""></div>
+        </div>
+        <div class="card-4">
+          <h2>Calculator</h2>
+          <p>Uses data from past projects to provide better delivery estimates</p>
+          <div class="icon-img"><img src="" alt=""></div>
+        </div>
+    </main>
+              
+
+    <footer class="absolute bottom-0">
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </body>
+</html>
